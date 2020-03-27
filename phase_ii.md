@@ -96,6 +96,8 @@ That's why we will be defining a NEW type called `UserCredentials` which will ha
 
 **If you need help understanding why we do this, please make sure to ask a question.**
 
+Test it out the `signUp` mutation using Playground and see if you get what seems like a valid `token` back.
 
+Perfect! We were able to send up a JSON web token when signing up a user!
 
 ------------ IN PROGRESS (let me know if you reach this point) -----------------------
