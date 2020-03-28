@@ -250,6 +250,10 @@ Try making the following queries and mutations:
 - createCategory - but only an `owner` or `admin` can create it
 - deleteCategory - but only an `owner` or `admin` can delete it
 
+## Conclusion
+
+We know all we need to know about connecting our Express server to GraphQL! As you may have noticed, GraphQL errors are not the best. :/ They provide very little information and are not easy to read. Also, the server never logs exactly what queries and mutations have run in the server. Next time, we will learn how to create our own GraphQL logger to log our errors and the queries/mutations that our server have run. We will also be learning how to send GraphQL requests from our client using Apollo Client! Get hyped because we're going to be learning a ton of exciting new stuff!
+
 
 [Resolver Reading]: https://github.com/ssoonmi/mern-graphql-curriculum/blob/master/resolvers.md
 [Formulating Queries and Mutation Reading under the 'Performing a Mutation' section]: https://github.com/ssoonmi/mern-graphql-curriculum/blob/master/formulating_queries_and_mutations.md#performing-a-mutation
