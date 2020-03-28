@@ -23,7 +23,10 @@ app.use(
 
 app.get("/playground", expressPlayground({ endpoint: "/graphql" }));
 
-app.get('/hello', (req, res) => res.send('Hello World!'));
+app.get('/hello', (req, res) => {
+  debugger
+  res.json('Hello World!');
+});
 
 const port = process.env.PORT || 5000;
 

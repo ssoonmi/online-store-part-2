@@ -227,7 +227,29 @@ If it's printing out the current user information, then great!
 
 ## `me` Query
 
------------- IN PROGRESS (let me know if you reach this point) -----------------------
+Let's create a query that will return the current user's information. There should be no arguments to this query and it should just return a `User` type. Make the `typeDefs` and `resolvers` for this query and determine which file they should be in. Afterwards, test this query out in Playground.  
+
+We did it! We successfully authenticated and identified the current user for a single GraphQL request!
+
+## Only Show Orders for the Current User
+
+Let's re-work our `orders` resolver on our `User` type. We only want to return an array of `orders` if the `User` being queried is the current user.
+
+## Other Protected Queries/Mutations
+
+Now that we have an authenticated user to make queries and mutations with, let's have some fun!!
+
+Try making the following queries and mutations:
+
+- orders - returning only the current user's orders
+- order - return the order only if it's the current user's order
+- makeOrder
+- cancelOrder
+- createProduct - but only an `owner` or `admin` can create it
+- deleteProduct - but only an `owner` or `admin` can delete it
+- createCategory - but only an `owner` or `admin` can create it
+- deleteCategory - but only an `owner` or `admin` can delete it
+
 
 [Resolver Reading]: https://github.com/ssoonmi/mern-graphql-curriculum/blob/master/resolvers.md
 [Formulating Queries and Mutation Reading under the 'Performing a Mutation' section]: https://github.com/ssoonmi/mern-graphql-curriculum/blob/master/formulating_queries_and_mutations.md#performing-a-mutation
