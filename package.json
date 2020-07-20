@@ -17,7 +17,7 @@
     "fakergem": "^2.1.0",
     "graphql": "^14.6.0",
     "graphql-tools": "^4.0.7",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mongoose": "^5.9.6"
   },
   "devDependencies": {
